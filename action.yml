@@ -1,0 +1,9 @@
+name: "AWS S3 Sync"
+description: "Syncs directories and S3 prefixes."
+author: makethingslive@gmail.com
+branding:
+  icon: upload-cloud
+  color: green
+runs:
+  using: "docker"
+  image: "Dockerfile"
