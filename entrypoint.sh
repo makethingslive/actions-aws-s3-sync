@@ -35,6 +35,10 @@ if [ -z "$SOURCE_DIR" ]; then
     echo "[ WARNING ] SOURCE_DIR | not found. Setting to ./ "
 fi
 
+if [ $SOURCE_DIR ]; then
+    LOCAL_PATH=${SOURCE_DIR}
+fi
+
 if [ -z "$DEST_DIR" ]; then
     AWS_S3_DEST_DIR=""
     echo "[ WARNING ] DEST_DIR | not found. Setting to / "
