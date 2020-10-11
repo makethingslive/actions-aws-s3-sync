@@ -1,5 +1,7 @@
 #!/bin/sh
 
+aws --version
+
 set -eo pipefail
 
 # Validate
@@ -35,7 +37,7 @@ fi
 
 if [ -z "$DEST_DIR" ]; then
     AWS_S3_DEST_DIR=""
-    echo "[ WARNING ] SOURCE_DIR | not found. Setting to / "
+    echo "[ WARNING ] DEST_DIR | not found. Setting to / "
 fi
 
 if [ -n "$AWS_S3_ENDPOINT_URL" ]; then
